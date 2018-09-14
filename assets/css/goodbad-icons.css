@@ -1,0 +1,53 @@
+body {
+    background-color: grey;
+    text-align: center;
+    color: #fff;
+}
+
+div.communication-goodbad {
+    text-align: center;
+}
+
+div.communication-goodbad .radio {
+    display: none;
+}
+
+div.communication-goodbad label:before {
+    content: ' ';
+    background-position: 0 48px;
+    height: 48px;
+    width: 48px;
+}
+
+div.communication-goodbad .happy + label:before {
+    background-image: url('../img/happy-face.png');
+}
+
+div.communication-goodbad .sad + label:before {
+    background-image: url('../img/sad-face.png');
+}
+
+div.communication-goodbad label {
+    cursor: pointer;
+    margin: 5px 5px;
+}
+
+div.communication-goodbad label {
+    display: -moz-inline-stack;
+    display: inline-block;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+}
+
+div.communication-goodbad label:before {
+    display:block;
+}
+
+div.communication-goodbad .happy:checked + label:before {
+    background-position: 0 0;
+}
+
+div.communication-goodbad .sad:checked + label:before {
+    background-position: 0 0;
+}
